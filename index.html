@@ -7,23 +7,23 @@
     <style>
 
         a[href^="https://www.google.com"] {
-            color: rgb(43, 118, 43);
+            color: green;
         }
         a[target="_blank"] {
-            color: rgb(0, 255, 123);
+            color: red;
         }
         p:nth-child(8):hover {
            font-style: italic;
            cursor: pointer;
         }
-       #second-div p:nth-child(2n+2) {
-        color: rgb(255, 115, 0);
+       #second-div p:nth-child(even) {
+        color: red;
        }
        #second-div p:nth-child(odd) {
         color: blue;
        }
-        #first-div > p::before {
-        content: "NEW - ";
+        #first-div > p::after {
+        content: "- NEW";
         color: yellow;
        }
    
